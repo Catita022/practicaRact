@@ -1,7 +1,36 @@
 
 {
-    "id":"1",
-    "nom":"arroz",
-    "precio":2344,
-    "cant":3
-}
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Laptop Gamer",
+        "precio": 1500,
+        "categoría": "Electrónica"
+      },
+      {
+        "id": 2,
+        "nombre": "Smartphone Pro",
+        "precio": 800,
+        "categoría": "Electrónica"
+      },
+      {
+        "id": 3,
+        "nombre": "Zapatillas Deportivas",
+        "precio": 120,
+        "categoría": "Ropa"
+      },
+      {
+        "id": 4,
+        "nombre": "Cafetera Automática",
+        "precio": 300,
+        "categoría": "Electrodomésticos"
+      },
+      {
+        "id": 5,
+        "nombre": "Bicicleta Montaña",
+        "precio": 600,
+        "categoría": "Deportes"
+      }
+    ]
+  }
+  
