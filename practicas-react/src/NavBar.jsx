@@ -1,17 +1,28 @@
 
+
+import { NavLink } from 'react-router-dom';
+
+import {ShoppingCart} from "lucide-react"
+
+
 function NavBar(){
-    return(
+    
+    return (
         <>
-            <nav className=" flex justify-between" >
-                <ul className="flex gap-4">
-                    <li><a className="p-4" href="#">home</a></li>
-                    <li><a className="p-4" href="#">productos</a></li>
-                    <li><a className="p-4" href="#">mesa</a></li>
-                    <li><a href="#">silla</a></li>
-                    <li><a href="#">nosotros</a></li>
-                </ul>
-            </nav>
+        <nav className="flex gap-4">
+            <NavLink to={'/'}>home</NavLink>
+            <NavLink to={'/productos'}>productos</NavLink>
+            <NavLink to={"/sillas"}>sillas</NavLink>
+            <NavLink to={"/electro"}>electro</NavLink>
+
+            <NavLink to={"/carrito"} className="flex items-center gap-2">
+            carrito
+            <ShoppingCart/>
+            </NavLink>
+
+        </nav>
         </>
+
     )
 }
 

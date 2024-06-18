@@ -18,4 +18,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+a.active{
+  color:blue;
+}
