@@ -1,9 +1,9 @@
-
+import { Link } from "react-router-dom";
 
 
 
 function Productos({ productos }) {
-    
+
 
     return (
         <>
@@ -13,10 +13,13 @@ function Productos({ productos }) {
                         // console.log(producto)
                         return (
                             <article key={indice} className="bg-white text-black p-4 text-center rounded-md shadow-xl hover:scale-105 transition-all">
-                                <img src={producto.images[0]} alt={producto.title} className="aspect-square object-contain"/>
+                                <img src={producto.images[0]} alt={producto.title} className="aspect-square object-contain" />
                                 <h2 className="font-bold truncate">{producto.title}</h2>
                                 <p className="text-gray-400">$ {producto.price}</p>
-                                <button className="bg-blue-300 rounded-sm text-black p-2  ">detalles</button>
+                                <Link to={'/item/'+producto.id}>
+                                    <button className="bg-blue-300 rounded-sm text-black p-2  ">detalles</button>
+                                </Link>
+
                             </article>
                         )
                     })

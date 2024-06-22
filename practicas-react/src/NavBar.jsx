@@ -11,9 +11,9 @@ function NavBar(){
         <>
         <nav className="flex gap-4">
             <NavLink to={'/'}>home</NavLink>
-            <NavLink to={'/productos'}>productos</NavLink>
-            <NavLink to={"/sillas"}>sillas</NavLink>
-            <NavLink to={"/electro"}>electro</NavLink>
+            <NavLink to={'/productos/id'}>productos</NavLink>
+            <NavLink to={"/productos/celulares"}>celulares</NavLink>
+            <NavLink to={"/productos/electro"}>electro</NavLink>
 
             <NavLink to={"/carrito"} className="flex items-center gap-2">
             carrito
